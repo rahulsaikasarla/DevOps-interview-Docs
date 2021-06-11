@@ -25,138 +25,91 @@ Payment - payment gateway\'a0will run with java
 
 
  We can combine admin,job,location,payment\'a0 these into one server\'a0 as per clients .
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Job server - Based on load
-\f1\fs24 \
+Job server - Based on load
 
-\f0\fs29\fsmilli14667 In job server we have important folders and files
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 Conf, content, data, lib, logs, report, templates,web
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+ In job server we have important folders and files
 
-\f0\fs29\fsmilli14667 \cf2 Conf - for very clint all configuration files will be in the conf directory .
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Content - cms content will be in content\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+Conf, content, data, lib, logs, report, templates,web
 
-\f0\fs29\fsmilli14667 \cf2 Data folder -\'a0
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 If we run only api service content and data folders are not utilized\'a0
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 If we run the admin service only the content and data folder will be used.
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+ Conf - for very clint all configuration files will be in the conf directory .
 
-\f0\fs29\fsmilli14667 \cf2 Lib- in lib jar file will be
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Logs -logfiles will be stored\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+Content - cms content will be in content
 
-\f0\fs29\fsmilli14667 \cf2 Report- if we pull any report that will be generated in the report folder .
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Content , data, report these three will use for in admin service if we run admin service these will be used
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Run.sh - is a file to simulate the service , if we want to execute a service this is the executable file to start a service . in this the script is written so that we will be running sh run.sh
-\f1\fs24 \
+ If we run only api service content and data folders are not utilized
 
-\f0\fs29\fsmilli14667 ep
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Templates -based on clients , when user signups they will get greeting mails to there mail ids in all template folders in all other clients\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+ If we run the admin service only the content and data folder will be used.
 
-\f0\fs29\fsmilli14667 \cf2 Conf is common for all services\'a0
-\f1\fs24 \
+Lib- in lib jar file will be
 
-\f0\fs29\fsmilli14667 Lib is common for all services\'a0
-\f1\fs24 \
+Logs -logfiles will be stored\'a0
 
-\f0\fs29\fsmilli14667 Logs are common for all services
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 Run.sh is common for all services\'a0
-\f1\fs24 \
+ Report- if we pull any report that will be generated in the report folder .
 
-\f0\fs29\fsmilli14667 Web is all for all services\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+Content , data, report these three will use for in admin service if we run admin service these will be used
 
-\f0\fs29\fsmilli14667 \cf2 Content is not common for all services\'a0
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 Data is not common for all services\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+ Run.sh - is a file to simulate the service , if we want to execute a service this is the executable file to start a service . in this the script is written so that we will be running sh run.sh
 
-\f0\fs29\fsmilli14667 \cf2 What is available in conf folder
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 ll
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 Admin_service.conf - which properties the admin service is running if we run admin service this conf will be utilized.
-\f1\fs24 \
+ Templates -based on clients , when user signups they will get greeting mails to there mail ids in all template folders in all other clients\'a0
 
-\f0\fs29\fsmilli14667 Api_service.conf - if we are using api service this conf will be utilized\'a0\'a0\'a0\
-\
-On which port it is running that information will available in api_service.conf\
-port=80\
-\
-If we want to run only admin service these 2 is enough app_server.conf and admin_service\
-If we are using api service these 2 is enough app_server.conf and api_service.conf\
-\
+ Conf is common for all services\'a0
+
+
+ Lib is common for all services
+
+
+ Logs are common for all services
+
+Run.sh is common for all services
+
+
+ Web is all for all services
+
+
+partightenfactor0
+
+
+Content is not common for all services
+
+
+Data is not common for all services
+
+
+
+What is available in conf folder
+
+
+ ll
+
+
+ Admin_service.conf - which properties the admin service is running if we run admin service this conf will be utilized.
+
+
+ Api_service.conf - if we are using api service this conf will be utilized
+
+On which port it is running that information will available in api_service.conf
+port=80
+
+If we want to run only admin service these 2 is enough app_server.conf and admin_service
+If we are using api service these 2 is enough app_server.conf and api_service.conf
+
 Location.conf
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Database.conf
-\f1\fs24 \
+
+ Database.conf
+
 
 \f0\fs29\fsmilli14667 Data base information will be there\'a0
 \f1\fs24 \

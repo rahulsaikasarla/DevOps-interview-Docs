@@ -131,64 +131,35 @@ If we want location service we need all 4 files
  Tenant_info.conf 
 
 
-\f0\fs29\fsmilli14667 the client version, of the client's versionnumber of their clients, like android client, ios client , if they release any version we have to update in tenant_info.conf.
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+the client version, of the client's versionnumber of their clients, like android client, ios client , if they release any version we have to update in tenant_info.conf.
 
-\f0\fs29\fsmilli14667 \cf2 Tenant_keys.conf -
-\f1\fs24 \
+ Tenant_keys.conf -
 
-\f0\fs29\fsmilli14667 Akamai key and streaming keys will be in tenant_key.conf from which keys they are using and which compression format they are using all these information will be in tenant_key.conf
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Content-\'a0
-\f1\fs24 \
+ Akamai key and streaming keys will be in tenant_key.conf from which keys they are using and which compression format they are using all these information will be in tenant_key.conf
 
-\f0\fs29\fsmilli14667 If we upload content in the content folder that will be available on the website.
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+Content
+ If we upload content in the content folder that will be available on the website.
 
-\f0\fs29\fsmilli14667 \cf2 Run.sh
-\f1\fs24 \
+Run.sh
+ In run.sh we have app_server.conf,admin,location,api,job,payment all these services will run
 
-\f0\fs29\fsmilli14667 In run.sh we have app_server.conf,admin,location,api,job,payment all these services will run
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 Start the service from app_server.conf they will take the app server config properties to start a service it may be any service.
-\f1\fs24 \
+ Start the service from app_server.conf they will take the app server config properties to start a service it may be any service.
 
-\f0\fs29\fsmilli14667 The services are admin,api, location, job, payment\'a0\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 If we run sh run.sh file it will start all these 5 services\'a0
-\f1\fs24 \
+ The services are admin,api, location, job, payment
 
-\f0\fs29\fsmilli14667 If we want to start only one service sh run.sh admin only admin will be started
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 If we want to start any required services we have to run sh run.sh api,location,job
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+ If we run sh run.sh file it will start all these 5 services
 
-\f0\fs29\fsmilli14667 \cf2 We are running all services on port number 80\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\
-\
-\
-\
-}
+
+ If we want to start only one service sh run.sh admin only admin will be started
+
+
+If we want to start any required services we have to run sh run.sh api,location,job
+
+
+ We are running all services on port number 80
+
+

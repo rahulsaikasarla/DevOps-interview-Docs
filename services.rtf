@@ -1,9 +1,9 @@
 
-We are using services / servers like\
+We are using services / servers like
 App server, admin server, web server, job, location server, payment server
 
 
- App server - from database and production to user/ clients
+ App server - from database and production to user clients
 
 
  App server will run on java services
@@ -18,13 +18,13 @@ Web server - will run on nginx  (html json format) (npm install)
 for getting information from users ip will be in this server
 
 
- Job- Payment,sms,multiple jobs will be in this server\'a0will run with java
+ Job- Payment,sms,multiple jobs will be in this server will run with java
 
-Payment - payment gateway\'a0will run with java
+Payment - payment gateway will run with java
 
 
 
- We can combine admin,job,location,payment\'a0 these into one server\'a0 as per clients .
+ We can combine admin,job,location,payment these into one server as per clients .
 
 Job server - Based on load
 
@@ -64,7 +64,7 @@ Content , data, report these three will use for in admin service if we run admin
 
  Templates -based on clients , when user signups they will get greeting mails to there mail ids in all template folders in all other clients\'a0
 
- Conf is common for all services\'a0
+ Conf is common for all services
 
 
  Lib is common for all services
@@ -111,44 +111,25 @@ Location.conf
  Database.conf
 
 
-\f0\fs29\fsmilli14667 Data base information will be there\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+ Data base information will be there
 
-\f0\fs29\fsmilli14667 \cf2 location.conf , ip_country_ip2location.conf, ip_country_maxmind.mmdb
-\f1\fs24 \
+location.conf , ip_country_ip2location.conf, ip_country_maxmind.mmdb
 
-\f0\fs29\fsmilli14667 These 3 are\'a0 location dependency configuration files
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
+location dependency configuration files
 
-\f0\fs29\fsmilli14667 \cf2 In these 3 files there will be ip information , ip which map to which country will be available in these 3 file.
-\f1\fs24 \
 
-\f0\fs29\fsmilli14667 .mmdb file should be updated for monthly 2-3 times because the ip go on changing to which country it is mapped\'a0
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 If we want location service we need all 4 files\'a0
-\f1\fs24 \
+ In these 3 files there will be ip information , ip which map to which country will be available in these 3 file.
 
-\f0\fs29\fsmilli14667 IPDatabase.conf, regional_languages.conf, redis_service.conf,ip_country_maxmind.mmdb
-\f1\fs24 \
-\pard\pardeftab720\partightenfactor0
-\cf2 \
-\
-\
-\
-\pard\pardeftab720\sl400\partightenfactor0
 
-\f0\fs29\fsmilli14667 \cf2 Tenant_info.conf -\'a0
-\f1\fs24 \
+.mmdb file should be updated for monthly 2-3 times because the ip go on changing to which country it is mapped
+
+If we want location service we need all 4 files
+
+
+ IPDatabase.conf, regional_languages.conf, redis_service.conf,ip_country_maxmind.mmdb
+ Tenant_info.conf 
+
 
 \f0\fs29\fsmilli14667 the client version, of the client's versionnumber of their clients, like android client, ios client , if they release any version we have to update in tenant_info.conf.
 \f1\fs24 \
